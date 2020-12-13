@@ -39,7 +39,7 @@ author: andy
 	<title>Sapper project template</title>
 </svelte:head>
 <script>
-    import Test from "../components/test.svelte";
+    import Test from "../components/Test.svelte";
     let text = "test";
 </script>
 # Great success!
