@@ -4,13 +4,13 @@ const contents = JSON.stringify(posts.map(post => {
 	return {
 		title: post.title,
 		slug: post.slug,
-		creationDate: post.creationDate ?? '',
-        modificationDate: post.modificationDate ?? '',
-        category: post.category ?? '',
-        tags: post.tags ?? '',
+		creationDate: post.creationDate,
+        modificationDate: post.modificationDate,
+        category: post.category,
+        tags: post.tags,
         readingTime: post.readingTime,
-        draft: post.draft ?? false,
-        author: post.author ?? 'Andreas Lauhard',
+        draft: post.draft,
+        author: post.author,
 	};
 }));
 
