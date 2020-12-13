@@ -9,7 +9,7 @@ tags:
 ---
 <script>
     // export let segment;
-    import Content from "content.md";
+    import Content from "./content.md";
 </script>
 
 <Content>

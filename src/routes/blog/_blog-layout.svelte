@@ -20,7 +20,6 @@
     export let categories;
     export let filteredPosts = [];
 
-    categories = ['test-cat1','test-cat2'];
     onMount(  async () => {
         if ($Posts.length == 0) {
             data = await fetchAllPostData('blog', $page.path)
