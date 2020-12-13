@@ -1,4 +1,5 @@
 ---
+layout: blog
 title: 'Warum AxtHarti a schiache 🐮 is'
 category: 'Psychologie'
 author: 'Andreas Lauhard'

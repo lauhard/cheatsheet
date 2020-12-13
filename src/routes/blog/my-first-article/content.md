@@ -1,7 +1,3 @@
----
-layout: blog
----
-
 <slot name='before'></slot>
 
 ### Lorem Gibson

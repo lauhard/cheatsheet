@@ -1,4 +1,5 @@
 ---
+layout: blog
 title: 'Svelte Cheat Sheet'
 category: 'Programming'
 author: 'Andreas Lauhard'
@@ -9,8 +10,9 @@ tags:
 ---
 <script>
     // export let segment;
-    import Content from "./content.md";
+    // import Content from "./content.md";
 </script>
-
+<!-- 
 <Content>
-</Content>
+</Content> -->
+## test
