@@ -24,6 +24,7 @@
     onMount(  async () => {
         if ($Posts.length == 0) {
             data = await fetchAllPostData('blog', $page.path)
+            console.log(data)
             tags = data.tags;
             posts = data.posts;
             currentPost = data.currentPost;
