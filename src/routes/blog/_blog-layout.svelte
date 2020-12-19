@@ -22,7 +22,12 @@
 
     onMount(  async () => {
         if ($Posts.length == 0) {
-            data = await fetchAllPostData('blog', $page.path)
+            let fixedPath = $page.path
+            console.log(fixedPath);
+            if (fixedPath.charAt(fixedPath.length -1) === '/') {
+                fixedPath = fixedPath.slice(0, -1);
+            }
+            data = await fetchAllPostData('blog', fixedPath)
             console.log(data)
             tags = data.tags;
             posts = data.posts;
@@ -31,7 +36,12 @@
             CurrentTags.set(currentTags);
         } 
         else {
-            data = await fetchCurrentPostAttributes($page.path);
+            let fixedPath = $page.path
+            console.log(fixedPath);
+            if (fixedPath.charAt(fixedPath.length -1) === '/') {
+                fixedPath = fixedPath.slice(0, -1);
+            }
+            data = await fetchAllPostData('blog', fixedPath)
             currentPost = data;
             currentTags = data.tags;
             CurrentTags.set(currentTags);
