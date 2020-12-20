@@ -17,7 +17,6 @@
     export let posts = [];
     export let currentPost = [];
     export let currentTags = [];
-    export let categories;
     export let filteredPosts = [];
 
     onMount(  async () => {
